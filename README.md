@@ -8,7 +8,7 @@ ProxyMaster is a tool to fetch free proxies from [free-proxy-list.net](https://f
 - **Creator:** B1te
 - **Team:** Bl4ckB1t Team
 - **Telegram:** [Bl4ckB1t Team](https://t.me/+jgf9WGttQMY5NmY8)
-- **GitHub:** [Bl4ckB1t](https://github.com/Bl4ckB1t)
+- **GitHub:** [Bl4ckB1t]([https://github.com/Bl4ckB1t](https://github.com/Bl4ckB1tGithub/))
 
 ## Python3
 The tool is supporting python3 only
