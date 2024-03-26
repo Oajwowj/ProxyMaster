@@ -16,7 +16,7 @@ The tool is supporting python3 only
 Clone the repository:
 
 ```bash
-git clone https://github.com/Bl4ckB1t/ProxyMaster.git
+git clone https://github.com/Bl4ckB1tGithub/ProxyMaster.git
 ```
 ## Running
 How To Run The Tool
