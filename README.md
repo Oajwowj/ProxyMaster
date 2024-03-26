@@ -34,13 +34,3 @@ pip install beautifulsoup4
 pip install pandas
 pip install pycountry
 ```
-## Screenshots
-OPTION 1
-<img width="1680" alt="Screenshot 2024-03-16 at 7 18 19 PM" src="https://github.com/Bl4ckB1t/ProxyMaster/assets/162990439/cd8fa24d-2be4-44b6-ac76-9df1683a6243">
-OPTION 2
-<img width="1680" alt="Screenshot 2024-03-16 at 7 20 01 PM" src="https://github.com/Bl4ckB1t/ProxyMaster/assets/162990439/d1acd8d8-7b1d-411d-8bfc-84262f7bd78f">
-OPTION 3
-<img width="1680" alt="Screenshot 2024-03-16 at 7 20 45 PM" src="https://github.com/Bl4ckB1t/ProxyMaster/assets/162990439/8c0bbe27-dac5-47a7-93ff-6598b1e4847a">
-
-
-
