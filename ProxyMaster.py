@@ -191,6 +191,8 @@ try:
 
             print(RB)
 
+            os.system("clear")
+            
             print("\nTEST PROXY BY ProxyMaster TOOL")
 
             print("-------------------------------\n")
