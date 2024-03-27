@@ -41,7 +41,8 @@ OPTION 1
 <img width="1680" alt="Screenshot 2024-03-26 at 10 46 27 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/eb398bb7-5c8f-40e5-89e5-aa47c5cffd21">
 
 OPTION 2
-<img width="1680" alt="Screenshot 2024-03-26 at 10 47 19 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/b8238b03-97fb-41e8-8d8c-6c6603c27cf0">
+<img width="1680" alt="Screenshot 2024-03-27 at 6 50 22 PM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/679f6955-34ce-4e90-a296-07e0eb446dcd">
 
 OPTION 3
-<img width="1680" alt="Screenshot 2024-03-26 at 10 50 34 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/607d4c46-06e3-438a-8ea5-948ebf46efa5">
+<img width="1680" alt="Screenshot 2024-03-27 at 6 52 03 PM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/78c6d688-d1fa-4c60-a9dc-c13cad68ae99">
+
