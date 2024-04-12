@@ -31,6 +31,13 @@ print("""
                     |___/
     """)
 
+# MAIN INFO
+
+print(f"{RB}Creator: B1te")
+print(f"{Y}Team: Bl4ckB1t Team")
+print(f"{B}Telegram: https://t.me/+jgf9WGttQMY5NmY8")
+print(f"{PU}Github: https://github.com/Bl4ckB1t")
+
 # OPTION NUMBER 1
 
 def PROXY_service(num_proxies=10, save_to_file=False, filename=None):
