@@ -37,7 +37,7 @@ pip install pandas
 pip install pycountry
 ```
 ## Screenshots
---help / -h
+Helping List <br> --help / -h
 <img width="1680" alt="Screenshot 2024-04-13 at 2 13 12 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/69b9c278-5a66-494c-a465-3740ea6a71c9">
 
 OPTION 1 (Fetching Proxies) <br>
