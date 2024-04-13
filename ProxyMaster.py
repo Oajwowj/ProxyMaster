@@ -5,6 +5,7 @@ import pandas as pd
 import pycountry
 import time
 import os
+import sys
 import argparse
 
 os.system("clear")
@@ -43,13 +44,11 @@ print(f"{PU}Github: https://github.com/Bl4ckB1t")
 def PROXY_service(num_proxies=10, save_to_file=False, filename=None):
     a_six = 1
     b_six = 2
+    
     output_text = ""
 
     while a_six < b_six:
         a_six += 1
-        output_text += PU + "\n"
-        output_text += "The Proxys From : https://free-proxy-list.net/\n"
-        output_text += B + "\n"
 
         try:
 
@@ -88,8 +87,8 @@ def PROXY_service(num_proxies=10, save_to_file=False, filename=None):
 
                 output_text += RB + "\n"
                 output_text += "____________________________________________________________________________________________________________________\n"
-                output_text += "  Number   |   IP Address   |    Port    |   Anonymity   |   HTTPS   |   Last Checked |      Country\n"
-                output_text += "___________|________________|____________|_______________|___________|________________|_____________________________\n"
+                output_text += "  Number  |   IP Address    |    Port      |   Anonymity   |   HTTPS   |   Last Checked |      Country\n"
+                output_text += "__________|_________________|______________|_______________|___________|________________|___________________________\n"
                 output_text += G + "\n"
 
                 num_proxies = min(num_proxies, len(df))
@@ -122,7 +121,7 @@ def PROXY_service(num_proxies=10, save_to_file=False, filename=None):
 lines_count = 0
 
 
-def MAIN_FUNC_TEST_SAVE(filename="proxies.txt", timeout=10):
+def MAIN_FUNC_TEST_SAVE(filename="proxies.txt", timeout=3):
 
     def test_proxy(ip, port):
 
@@ -296,7 +295,7 @@ def main():
     parser.add_argument("option", type=int, choices=[1, 2, 3], help="Select an option: 1 - Get Proxies, 2 - Save Proxies In File, 3 - Test Proxy")
     parser.add_argument("--num_proxies", type=int, default=300, help="Number of proxies to retrieve (default: 300) - Only for option 1 and 2")
     parser.add_argument("--filename", type=str, help="File path to save proxies (for option 2) or file path containing proxies to test (for option 3)")
-    parser.add_argument("--timeout", type=int, default=10, help="Timeout for testing proxies (default: 10) - Only for option 3")
+    parser.add_argument("--timeout", type=int, default=10, help="Timeout for testing proxies (default: 3) - Only for option 3")
     args = parser.parse_args()
 
     if args.option == 1:
