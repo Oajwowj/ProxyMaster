@@ -23,25 +23,20 @@ GUL = "\033[32;4m"  # green under line
 WB = "\033[1;37m"  # white bold
 
 print(RB)
-print("""
- ____                      __  __           _            
-|  _ \ _ __ _____  ___   _|  \/  | __ _ ___| |_ ___ _ __ 
-| |_) | '__/ _ \ \/ / | | | |\/| |/ _` / __| __/ _ \ '__|
-|  __/| | | (_) >  <| |_| | |  | | (_| \__ \ ||  __/ |   
-|_|   |_|  \___/_/\_\\__,  |_|  |_|\__,_|___/\__\___|_|   
-                     |___/                               
-""")
+
+os.system("cat logo.txt")
 
 # MAIN INFO
 
 print(f"{RB}Creator: B1te")
 print(f"{Y}Team: Bl4ckB1t Team")
 print(f"{B}Telegram: https://t.me/+jgf9WGttQMY5NmY8")
-print(f"{PU}Github: https://github.com/Bl4ckB1t")
+print(f"{PU}Github: https://github.com/Bl4ckB1t\n")
 
 # OPTION NUMBER 1
 
 def PROXY_service(num_proxies=10, save_to_file=False, filename=None):
+
     a_six = 1
     b_six = 2
     
@@ -122,7 +117,7 @@ lines_count = 0
 
 
 def MAIN_FUNC_TEST_SAVE(filename="proxies.txt", timeout=3):
-
+    
     def test_proxy(ip, port):
 
         global lines_count
@@ -184,6 +179,8 @@ def MAIN_FUNC_TEST_SAVE(filename="proxies.txt", timeout=3):
         print(RB)
 
         os.system("clear")
+
+        os.system("cat logo.txt")
         
         print("\nTEST PROXY BY ProxyMaster TOOL")
 
@@ -248,6 +245,7 @@ def MAIN_FUNC_TEST_SAVE(filename="proxies.txt", timeout=3):
 ############################################
 
 def save_proxies_to_file(proxies, filename):
+    
     with open(filename, 'w') as file:
         for proxy in proxies:
             file.write(proxy + '\n')
@@ -256,6 +254,7 @@ def save_proxies_to_file(proxies, filename):
 
 def save_proxy_ips_to_file(FILENAME, num_proxies=300):
     try:
+        
         url = "https://free-proxy-list.net/"
         response = requests.get(url)
 
@@ -279,11 +278,12 @@ def save_proxy_ips_to_file(FILENAME, num_proxies=300):
             print(f"{RB}[-] Please Try Again")
     except requests.exceptions.ConnectionError:
         print("[-] No Internet Connection")
-    print(f"{G}[+] The Operation Completed")
+    print(f"\n{G}[+] The Operation Completed")
 
 ############################################
 
 def count_lines(text):
+    
     lines = text.split('\n')
     return len(lines)
 
@@ -291,6 +291,7 @@ def count_lines(text):
 
 def main():
     print(WB)
+    
     parser = argparse.ArgumentParser(description="Proxy Tool")
     parser.add_argument("option", type=int, choices=[1, 2, 3], help="Select an option: 1 - Get Proxies, 2 - Save Proxies In File, 3 - Test Proxy")
     parser.add_argument("--num_proxies", type=int, default=300, help="Number of proxies to retrieve (default: 300) - Only for option 1 and 2")
@@ -299,17 +300,25 @@ def main():
     args = parser.parse_args()
 
     if args.option == 1:
+        
         PROXY_service(args.num_proxies)
     elif args.option == 2:
+        
         if args.filename:
+            os.system("clear")
+            print(RB)
+            os.system("cat logo.txt")
+
             save_proxy_ips_to_file(args.filename, args.num_proxies)
         else:
             print("Filename is required for option 2")
     elif args.option == 3:
         if args.filename:
+            
             MAIN_FUNC_TEST_SAVE(args.filename, args.timeout)
         else:
             print("Filename is required for option 3")
 
 if __name__ == "__main__":
+    
     main()
