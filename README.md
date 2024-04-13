@@ -11,7 +11,7 @@ ProxyMaster is a tool to fetch free proxies from [free-proxy-list.net](https://f
 - **GitHub:** [Bl4ckB1t](https://github.com/Bl4ckB1tGithub/)
 
 ## Python3
-The tool is supporting python3 only
+The tool is supporting Python3 only
 
 ## Installation
 
