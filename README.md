@@ -1,7 +1,5 @@
 ## ProxyMaster
-ProxyMaster is a tool to fetch free proxies from [free-proxy-list.net](https://free-proxy-list.net)
-
-![telegram-cloud-photo-size-4-5770693496443876319-y](https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/d907b3c3-e877-4c03-8a9e-0c3ca2712b61)
+![photo_2024-04-16 00 54 27](https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/0074f335-d17b-4f62-a409-86f10c8a7b6a)
 
 ---
 
