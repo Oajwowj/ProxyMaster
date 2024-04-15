@@ -11,9 +11,10 @@ ProxyMaster is a tool to fetch free proxies from [free-proxy-list.net](https://f
 - **GitHub:** [Bl4ckB1t](https://github.com/Bl4ckB1tGithub/)
 
 ## Hashed (SHA-256)
-83078e726ab078d60740163144905916c3d9f029ca3cb105bc2c1386fda02197  ProxyMaster.py
-82df6c82a4d1af3ce9ceb15cd97309cee38add97b15201b1e5a53d4237b6e1a7  README.md
-0eba6e247a18ab4b505dba7c177626928fe29af74dd9c5b242785b71f5c5a659  requirements.txt
+ProxyMaster.py
+```83078e726ab078d60740163144905916c3d9f029ca3cb105bc2c1386fda02197```
+82df6c82a4d1af3ce9ceb15cd97309cee38add97b15201b1e5a53d4237b6e1a7
+0eba6e247a18ab4b505dba7c177626928fe29af74dd9c5b242785b71f5c5a659
 ## Python3
 The tool is supporting Python3 only
 
