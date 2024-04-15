@@ -299,8 +299,8 @@ def main():
     
     parser = argparse.ArgumentParser(description="Proxy Tool")
     parser.add_argument("-p", "--num_proxies", type=int, help="Number of proxies to retrieve")
-    parser.add_argument("-f", "--filename", type=str, help="File path to save proxies (for option 2) or file path containing proxies to test (for option 3)")
-    parser.add_argument("-t", "--timeout", type=int, default=10, help="Timeout for testing proxies (default: 10) - Only for option 3")
+    parser.add_argument("-f", "--filename", type=str, help="File path to save proxies or file path containing proxies to test")
+    parser.add_argument("-t", "--timeout", type=int, default=3, help="Timeout for testing proxies (default: 3)")
     args = parser.parse_args()
 
     if args.num_proxies and not args.filename:
