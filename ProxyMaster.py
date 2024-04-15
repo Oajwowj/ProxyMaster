@@ -22,16 +22,21 @@ RB = "\033[1;31m"  # red bold
 GUL = "\033[32;4m"  # green under line
 WB = "\033[1;37m"  # white bold
 
-print(RB)
+def logo():
+    print(f"""{RB}
+ ____                      __  __           _
+|  _ \ _ __ _____  ___   _|  \/  | __ _ ___| |_ ___ _ __
+| |_) | '__/ _ \ \/ / | | | |\/| |/ _` / __| __/ _ \ '__|
+|  __/| | | (_) >  <| |_| | |  | | (_| \__ \ ||  __/ |
+|_|   |_|  \___/_/\_ \\__, |_|  |_|\__,_|___/\__\___|_|V4.0
+                    |___/
+    """)
+    print(f"{RB}Creator: B1te")
+    print(f"{Y}Team: Bl4ckB1t Team")
+    print(f"{B}Telegram: https://t.me/+jgf9WGttQMY5NmY8")
+    print(f"{PU}Github: https://github.com/Bl4ckB1t\n")
 
-os.system("cat logo.txt")
-
-# MAIN INFO
-
-print(f"{RB}Creator: B1te")
-print(f"{Y}Team: Bl4ckB1t Team")
-print(f"{B}Telegram: https://t.me/+jgf9WGttQMY5NmY8")
-print(f"{PU}Github: https://github.com/Bl4ckB1t\n")
+logo()
 
 # OPTION NUMBER 1
 
@@ -101,10 +106,10 @@ def PROXY_service(num_proxies=10, save_to_file=False, filename=None):
 
             else:
                 output_text += RB + "\n"
-                output_text += "[-] Please Try Again\n"
+                output_text += f"{RB}[-] Please Try Again\n"
         except requests.exceptions.ConnectionError:
             output_text += RB + "\n"
-            output_text += "[-] No Internet Connection\n"
+            output_text += f"{RB}[-] No Internet Connection\n"
 
     line_count = count_lines(output_text)
     print(output_text)
@@ -180,9 +185,9 @@ def MAIN_FUNC_TEST_SAVE(filename="proxies.txt", timeout=3):
 
         os.system("clear")
 
-        os.system("cat logo.txt")
+        logo()
         
-        print("\nTEST PROXY BY ProxyMaster TOOL")
+        print(f"{RB}\nTEST PROXY BY ProxyMaster TOOL")
 
         print("-------------------------------\n")
 
@@ -277,7 +282,7 @@ def save_proxy_ips_to_file(FILENAME, num_proxies=300):
         else:
             print(f"{RB}[-] Please Try Again")
     except requests.exceptions.ConnectionError:
-        print("[-] No Internet Connection")
+        print(f"{RB}[-] No Internet Connection")
     print(f"\n{G}[+] The Operation Completed")
 
 ############################################
@@ -293,31 +298,22 @@ def main():
     print(WB)
     
     parser = argparse.ArgumentParser(description="Proxy Tool")
-    parser.add_argument("option", type=int, choices=[1, 2, 3], help="Select an option: 1 - Get Proxies, 2 - Save Proxies In File, 3 - Test Proxy")
-    parser.add_argument("--num_proxies", type=int, default=300, help="Number of proxies to retrieve (default: 300) - Only for option 1 and 2")
-    parser.add_argument("--filename", type=str, help="File path to save proxies (for option 2) or file path containing proxies to test (for option 3)")
-    parser.add_argument("--timeout", type=int, default=10, help="Timeout for testing proxies (default: 3) - Only for option 3")
+    parser.add_argument("-p", "--num_proxies", type=int, help="Number of proxies to retrieve")
+    parser.add_argument("-f", "--filename", type=str, help="File path to save proxies (for option 2) or file path containing proxies to test (for option 3)")
+    parser.add_argument("-t", "--timeout", type=int, default=10, help="Timeout for testing proxies (default: 10) - Only for option 3")
     args = parser.parse_args()
 
-    if args.option == 1:
-        
+    if args.num_proxies and not args.filename:
         PROXY_service(args.num_proxies)
-    elif args.option == 2:
-        
-        if args.filename:
-            os.system("clear")
-            print(RB)
-            os.system("cat logo.txt")
 
-            save_proxy_ips_to_file(args.filename, args.num_proxies)
-        else:
-            print("Filename is required for option 2")
-    elif args.option == 3:
-        if args.filename:
-            
-            MAIN_FUNC_TEST_SAVE(args.filename, args.timeout)
-        else:
-            print("Filename is required for option 3")
+    elif args.num_proxies and args.filename:
+        
+        save_proxy_ips_to_file(args.filename, args.num_proxies)
+    elif args.filename and args.timeout:
+        
+        MAIN_FUNC_TEST_SAVE(args.filename, args.timeout)
+    else:
+        print(f"{RB}[-] Please provide the required arguments!")
 
 if __name__ == "__main__":
     
