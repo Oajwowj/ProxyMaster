@@ -53,12 +53,11 @@ pip install pycountry
 Helping List <br> --help / -h
 <img width="1680" alt="Screenshot 2024-04-13 at 2 13 12 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/69b9c278-5a66-494c-a465-3740ea6a71c9">
 
-OPTION 1 (Fetching Proxies) <br> Command: python3 ProxyMaster.py 1 --num_proxies (Proxies_Number)
+Fetching Proxies <br> Command: python3 ProxyMaster.py --num_proxies (Proxies_Number)
 <img width="1680" alt="Screenshot 2024-04-13 at 2 21 13 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/4e6220cc-6108-4ec1-8ea7-7fb47b9a6fe5">
 
-OPTION 2 (Saving Proxies) <br> Command: python3 ProxyMaster.py 2 --num_proxies (Proxies_Number) --filename (File_Name)
+Saving Proxies <br> Command: python3 ProxyMaster.py --num_proxies (Proxies_Number) --filename (File_Name)
 <img width="1680" alt="Screenshot 2024-04-13 at 2 23 06 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/b985c15e-820b-4329-b5fc-93db49f7183f">
 
-OPTION 3 (Testing Proxies) <br>
-Command: python3 ProxyMaster.py 3 --filename (File_Name) --timeout (Timeout)
+Testing Proxies <br> Command: python3 ProxyMaster.py --filename (File_Name) --timeout (Timeout) | Timeout = 3 (Default)
 <img width="1680" alt="Screenshot 2024-04-13 at 2 29 41 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/ea2d4475-a1c6-41e8-ac71-513a461efdc1">
