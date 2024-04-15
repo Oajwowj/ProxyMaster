@@ -1,4 +1,5 @@
-## ProxyMaster <br>     
+## ProxyMaster
+
 ![photo_2024-04-16 00 54 27](https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/0074f335-d17b-4f62-a409-86f10c8a7b6a)
 
 ---
