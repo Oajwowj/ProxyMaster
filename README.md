@@ -60,11 +60,11 @@ Options:
 python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --timeout 2
 
 ## V6.8
-<br>`Command: python3 /home/kali/Desktop/TestV6.8.py --num_proxies 30`<br>
+<br>```Command: python3 /home/kali/Desktop/TestV6.8.py --num_proxies 30```<br>
 <br><img width="1680" alt="Screenshot 2024-04-22 at 1 45 55 PM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/0639ff84-33de-4617-99bd-9f3e75eb6cd4"><br>
-<br>`Command: python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --num_proxies 20`<br>
+<br>```Command: python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --num_proxies 20```<br>
 <br><img width="1680" alt="Screenshot 2024-04-22 at 1 40 36 PM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/50525d8b-f189-4b25-ba14-a14095ce9573"><br>
-<br>`Command: python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --timeout 2`<br>
+<br>```Command: python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --timeout 2```<br>
 <br><img width="1680" alt="Screenshot 2024-04-22 at 1 44 20 PM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/a864e586-598d-454f-ac2e-62da70a7bbe7">
 
 
