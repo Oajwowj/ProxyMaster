@@ -62,7 +62,7 @@ python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --timeout 2
 ## V6.8
 <br>
 Command: python3 /home/kali/Desktop/TestV6.8.py --num_proxies 30
-<br>
+---
 <img width="1680" alt="Screenshot 2024-04-22 at 1 45 55 PM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/0639ff84-33de-4617-99bd-9f3e75eb6cd4">
 <br>
 Command: python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --num_proxies 20
