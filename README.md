@@ -41,16 +41,20 @@ pip install pandas
 pip install pycountry
 ```
 ## Usage
+```
+Usage: TestV6.8.py [-h] [-p NUM_PROXIES] [-f FILENAME] [-t TIMEOUT]
 
-Usage: TestV6.8.py [-h] [-p NUM_PROXIES] [-f FILENAME] [-t TIMEOUT]<br><br>
+ProxyMaster
 
-ProxyMaster<br><br>
-options:<br>
-&emsp;-h, --help&emsp;&emsp;&emsp;show this help message and exit<br>
-&emsp;-p NUM_PROXIES, --num_proxies NUM_PROXIES&emsp;Number of proxies to retrieve<br>
-&emsp;-f FILENAME, --filename FILENAME&emsp;File path to save proxies or file path containing proxies to test<br>
-&emsp;-t TIMEOUT, --timeout TIMEOUT&emsp;Timeout for testing proxies (default: 3)<br>
-
+Options:
+  -h, --help            Show this help message and exit
+  -p NUM_PROXIES, --num_proxies NUM_PROXIES
+                        Number of proxies to retrieve
+  -f FILENAME, --filename FILENAME
+                        File path to save proxies or file path containing proxies to test
+  -t TIMEOUT, --timeout TIMEOUT
+                        Timeout for testing proxies (default: 3)
+```
 
 ## Screenshots
 Helping List <br> --help / -h
