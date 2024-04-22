@@ -11,7 +11,8 @@
 
 ## Hash (SHA-256)
 ProxyMaster.py
-```bash
+
+```
 83078e726ab078d60740163144905916c3d9f029ca3cb105bc2c1386fda02197
 ```
 ## Python3
@@ -21,7 +22,7 @@ The tool is supporting Python3 only
 
 Clone the repository:
 
-```bash
+```
 git clone https://github.com/Bl4ckB1tGithub/ProxyMaster.git
 ```
 ## Running
@@ -56,16 +57,20 @@ Options:
   -t TIMEOUT, --timeout TIMEOUT
                         Timeout for testing proxies (default: 3)
 ```
+python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --timeout 2
 
-## Screenshots
-Helping List <br> --help / -h
-<img width="1680" alt="Screenshot 2024-04-16 at 1 18 03 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/0333921d-fa88-4fc0-a828-90fa132631b5">
+## V6.8
+<br>
+Command: ```python3 /home/kali/Desktop/TestV6.8.py --num_proxies 30```
+<br>
+<img width="1680" alt="Screenshot 2024-04-22 at 1 45 55 PM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/0639ff84-33de-4617-99bd-9f3e75eb6cd4">
+<br>
+Command: ```python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --num_proxies 20```
+<br>
+<img width="1680" alt="Screenshot 2024-04-22 at 1 40 36 PM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/50525d8b-f189-4b25-ba14-a14095ce9573">
+<br>
+Command: ```python3 /home/kali/Desktop/TestV6.8.py --filename SavedProxies.txt --timeout 2```
+<br>
+<img width="1680" alt="Screenshot 2024-04-22 at 1 44 20 PM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/a864e586-598d-454f-ac2e-62da70a7bbe7">
 
-Fetching Proxies <br> Command: python3 ProxyMaster.py --num_proxies (Proxies_Number)
-<img width="1680" alt="Screenshot 2024-04-13 at 2 21 13 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/4e6220cc-6108-4ec1-8ea7-7fb47b9a6fe5">
 
-Saving Proxies <br> Command: python3 ProxyMaster.py --num_proxies (Proxies_Number) --filename (File_Name)
-<img width="1680" alt="Screenshot 2024-04-13 at 2 23 06 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/b985c15e-820b-4329-b5fc-93db49f7183f">
-
-Testing Proxies <br> Command: python3 ProxyMaster.py --filename (File_Name) --timeout (Timeout) | Timeout = 3 (Default)
-<img width="1680" alt="Screenshot 2024-04-13 at 2 29 41 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/ea2d4475-a1c6-41e8-ac71-513a461efdc1">
