@@ -27,7 +27,7 @@ git clone https://github.com/Bl4ckB1tGithub/ProxyMaster.git
 ## Running
 How To Run The Tool
 
-```bash
+```
 cd ProxyMaster 
 pip install -r requirements.txt
 python3 ProxyMaster.py
@@ -41,6 +41,7 @@ pip install pandas
 pip install pycountry
 ```
 ## Usage
+
 ```
 Usage: TestV6.8.py [-h] [-p NUM_PROXIES] [-f FILENAME] [-t TIMEOUT]
 
