@@ -40,6 +40,21 @@ pip install beautifulsoup4
 pip install pandas
 pip install pycountry
 ```
+## Usage
+
+usage: TestV6.8.py [-h] [-p NUM_PROXIES] [-f FILENAME] [-t TIMEOUT]
+
+ProxyMaster
+
+options:
+  -h, --help            show this help message and exit
+  -p NUM_PROXIES, --num_proxies NUM_PROXIES
+                        Number of proxies to retrieve
+  -f FILENAME, --filename FILENAME
+                        File path to save proxies or file path containing proxies to test
+  -t TIMEOUT, --timeout TIMEOUT
+                        Timeout for testing proxies (default: 3)
+
 ## Screenshots
 Helping List <br> --help / -h
 <img width="1680" alt="Screenshot 2024-04-16 at 1 18 03 AM" src="https://github.com/Bl4ckB1tGithub/ProxyMaster/assets/164971942/0333921d-fa88-4fc0-a828-90fa132631b5">
