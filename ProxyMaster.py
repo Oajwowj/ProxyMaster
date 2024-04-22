@@ -1,12 +1,5 @@
-import socket
-import requests
+import socket, requests, pandas as pd, pycountry, time, os, sys, argparse, platform
 from bs4 import BeautifulSoup
-import pandas as pd
-import pycountry
-import time
-import os
-import sys
-import argparse
 
 os.system("clear")
 
@@ -22,23 +15,54 @@ RB = "\033[1;31m"  # red bold
 GUL = "\033[32;4m"  # green under line
 WB = "\033[1;37m"  # white bold
 
+def get_public_ip():
+    url = "https://httpbin.org/ip"
+
+    try:
+        response = requests.get(url)
+        if response.status_code == 200:
+            data = response.json()
+            public_ip = data.get("origin")
+            return public_ip
+        else:
+            print("Failed to fetch public IP. Status code:", response.status_code)
+    except Exception as e:
+        print("An error occurred:", str(e))
+public_ip = get_public_ip()
+
+# OS
+
+def get_os():
+    os_name = platform.system()
+    if os_name == "Darwin":
+        return "macOS"
+    elif os_name == "Windows":
+        return "Windows"
+    elif "android" in os_name.lower():
+        return "Android"
+    elif os_name == "Linux":
+        return "Linux"
+    else:
+        return "Unknown"
+
+os_name = get_os()
+
+# LOGO
+
 def logo():
     print(f"""{RB}
  ____                      __  __           _
-|  _ \ _ __ _____  ___   _|  \/  | __ _ ___| |_ ___ _ __
-| |_) | '__/ _ \ \/ / | | | |\/| |/ _` / __| __/ _ \ '__|
-|  __/| | | (_) >  <| |_| | |  | | (_| \__ \ ||  __/ |
-|_|   |_|  \___/_/\_ \\__, |_|  |_|\__,_|___/\__\___|_|V4.0
-                    |___/
+|  _ \ _ __ _____  ___   _|  \/  | __ _ ___| |_ ___ _ __ \t\tIP: {WB}{public_ip}{RB}
+| |_) | '__/ _ \ \/ / | | | |\/| |/ _` / __| __/ _ \ '__|\t\tOS: {B}{os_name}{RB}
+|  __/| | | (_) >  <| |_| | |  | | (_| \__ \ ||  __/ |   \t\tContact: {G}B1te_EGY@proton.me{RB}
+|_|   |_|  \___/_/\_ \\__, |_|  |_|\__,_|___/\__\___|_|V6.8
+                    |___/                                  
     """)
-    print(f"{RB}Creator: B1te")
-    print(f"{Y}Team: Bl4ckB1t Team")
+    print(f"{RB}Creator: @SuperB1te")
     print(f"{B}Telegram: https://t.me/+jgf9WGttQMY5NmY8")
-    print(f"{PU}Github: https://github.com/Bl4ckB1t\n")
+    print(f"{PU}Github: https://github.com/Bl4ckB1tGithub\n")
 
 logo()
-
-# OPTION NUMBER 1
 
 def PROXY_service(num_proxies=10, save_to_file=False, filename=None):
 
@@ -84,22 +108,24 @@ def PROXY_service(num_proxies=10, save_to_file=False, filename=None):
                     proxy_data.append([ip, port, anonymity, https, last_checked, country_name])
 
                 df = pd.DataFrame(proxy_data, columns=headers)
+                
+                print(f"{WB}{G}[+] These proxies will be updated auto after 10m")
 
                 output_text += RB + "\n"
-                output_text += "____________________________________________________________________________________________________________________\n"
-                output_text += "  Number  |   IP Address    |    Port      |   Anonymity   |   HTTPS   |   Last Checked |      Country\n"
-                output_text += "__________|_________________|______________|_______________|___________|________________|___________________________\n"
-                output_text += G + "\n"
+                output_text += "______________________________________________________________________________________________________________________________________\n"
+                output_text += "  Number  |   IP Address          |    Port       |   Anonymity    |   HTTPS    |   Last Checked       |      Country\n"
+                output_text += "__________|_______________________|_______________|________________|____________|______________________|______________________________\n"
+                output_text += "          |                       |               |                |            |                      |\n" + G
 
                 num_proxies = min(num_proxies, len(df))
                 for index, row in df.head(num_proxies).iterrows():
                     output_text += (
-                        str(index + 1).ljust(10) + "|" + row['IP Address'].ljust(15) + "  |" +
-                        row['Port'].ljust(12) + "  |" + row['Anonymity'].ljust(14) + " |" +
-                        row['Https'].ljust(9) + "  |" + row['Last Checked'].ljust(15) + " |" + row[
+                        str(index + 1).ljust(10) + "| " + row['IP Address'].ljust(20) + "  | " +
+                        row['Port'].ljust(12) + "  | " + row['Anonymity'].ljust(14) + " | " +
+                        row['Https'].ljust(9) + "  | " + row['Last Checked'].ljust(20) + " | " + row[
                             'Country'] + "\n"
                     )
-                output_text += RB + "__________|_________________|______________|_______________|___________|________________|______________________\n"
+                output_text += RB + "__________|_______________________|_______________|________________|____________|______________________|______________________________\n"
 
                 if save_to_file and filename:
                     save_proxies_to_file(df['IP Address'].tolist(), filename)
@@ -115,8 +141,6 @@ def PROXY_service(num_proxies=10, save_to_file=False, filename=None):
     print(output_text)
 
 ############################################
-
-# OPTION NUMBER 2
 
 lines_count = 0
 
@@ -283,7 +307,7 @@ def save_proxy_ips_to_file(FILENAME, num_proxies=300):
             print(f"{RB}[-] Please Try Again")
     except requests.exceptions.ConnectionError:
         print(f"{RB}[-] No Internet Connection")
-    print(f"\n{G}[+] The Operation Completed")
+    print(f"\n{WB}{G}[+] The Operation Completed")
 
 ############################################
 
@@ -295,12 +319,12 @@ def count_lines(text):
 ############################################
 
 def main():
-    print(WB)
-    
-    parser = argparse.ArgumentParser(description="Proxy Tool")
+    print(RE)
+    parser = argparse.ArgumentParser(description="ProxyMaster")
     parser.add_argument("-p", "--num_proxies", type=int, help="Number of proxies to retrieve")
     parser.add_argument("-f", "--filename", type=str, help="File path to save proxies or file path containing proxies to test")
     parser.add_argument("-t", "--timeout", type=int, default=3, help="Timeout for testing proxies (default: 3)")
+
     args = parser.parse_args()
 
     if args.num_proxies and not args.filename:
