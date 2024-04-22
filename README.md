@@ -42,18 +42,19 @@ pip install pycountry
 ```
 ## Usage
 
-usage: TestV6.8.py [-h] [-p NUM_PROXIES] [-f FILENAME] [-t TIMEOUT]
+usage: TestV6.8.py [-h] [-p NUM_PROXIES] [-f FILENAME] [-t TIMEOUT]<br>
+
 
 ProxyMaster
-
-options:
-  -h, --help            show this help message and exit
-  -p NUM_PROXIES, --num_proxies NUM_PROXIES
-                        Number of proxies to retrieve
-  -f FILENAME, --filename FILENAME
-                        File path to save proxies or file path containing proxies to test
-  -t TIMEOUT, --timeout TIMEOUT
-                        Timeout for testing proxies (default: 3)
+<br>
+options:<br>
+  -h, --help            show this help message and exit<br>
+  -p NUM_PROXIES, --num_proxies NUM_PROXIES<br>
+                        Number of proxies to retrieve<br>
+  -f FILENAME, --filename FILENAME<br>
+                        File path to save proxies or file path containing proxies to test<br>
+  -t TIMEOUT, --timeout TIMEOUT<br>
+                        Timeout for testing proxies (default: 3)<br>
 
 ## Screenshots
 Helping List <br> --help / -h
