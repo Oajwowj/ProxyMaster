@@ -45,7 +45,7 @@ pip install pycountry
 ## Usage
 
 ```
-Usage: TestV6.8.py [-h] [-p NUM_PROXIES] [-f FILENAME] [-t TIMEOUT]
+Usage: ProxyMasterV6.8.py [-h] [-p NUM_PROXIES] [-f FILENAME] [-t TIMEOUT]
 
 ProxyMaster
 
